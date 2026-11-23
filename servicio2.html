@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Limpieza de hogares de Servicios Express: actividades, planes y cotización de ejemplo.">
+    <title>Limpieza de hogares | Servicios Express</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="servicio2.css">
+    <script src="script.js" defer></script>
+    <script src="servicio2.js" defer></script>
+</head>
+<body class="pagina-servicio2">
+    <header>
+        <h1>Servicios Express</h1>
+        <p>Soluciones para facilitar tu día a día</p>
+    </header>
+    <nav aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicio1.html">Lavado de autos</a>
+        <a href="servicio2.html" aria-current="page">Limpieza de hogares</a>
+    </nav>
+    <main>
+        <section class="presentacion-hogar">
+            <div>
+                <p class="etiqueta-hogar">SERVICIO 2</p>
+                <h2>Un hogar limpio para disfrutar cada día</h2>
+                <p>La limpieza de hogares ayuda a mantener los ambientes ordenados y cómodos. En Servicios Express presentamos opciones de limpieza para dormitorios, salas, cocinas y baños.</p>
+                <p>El trabajo se organiza según el tamaño del espacio y las tareas acordadas antes de comenzar.</p>
+                <a class="boton-hogar" href="#cotizacion">Consultar precio de ejemplo</a>
+            </div>
+            <figure>
+                <img src="img/limpieza-hogar.svg" width="800" height="560" alt="Ilustración de una sala ordenada con un sofá, una planta y utensilios de limpieza">
+                <figcaption>Espacios ordenados y cuidado de los detalles.</figcaption>
+            </figure>
+        </section>
+        <section class="bloque-hogar" aria-labelledby="incluye">
+            <h2 id="incluye">¿Qué incluye el servicio?</h2>
+            <div class="columnas-hogar">
+                <div>
+                    <h3>Ambientes interiores</h3>
+                    <ul>
+                        <li>Barrido, aspirado y trapeado de pisos.</li>
+                        <li>Limpieza del polvo en muebles y superficies accesibles.</li>
+                        <li>Organización básica de salas y dormitorios.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Cocina y baños</h3>
+                    <ul>
+                        <li>Limpieza de mesones, lavaplatos y azulejos accesibles.</li>
+                        <li>Limpieza de lavamanos, sanitarios y espejos.</li>
+                        <li>Recolección de residuos domésticos.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="nota-hogar">No incluye trabajos en altura, reparaciones ni manejo de residuos peligrosos. Los detalles se acuerdan previamente.</p>
+        </section>
+        <section class="bloque-hogar" aria-labelledby="planes">
+            <h2 id="planes">Planes de limpieza</h2>
+            <p>Planes y precios ficticios para esta práctica académica.</p>
+            <div class="tabla-hogar">
+                <table>
+                    <caption>Comparación de los planes de ejemplo</caption>
+                    <thead><tr><th scope="col">Plan</th><th scope="col">Espacio de referencia</th><th scope="col">Duración estimada</th><th scope="col">Precio por visita</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Básico</th><td>Hasta 2 ambientes</td><td>2 horas</td><td>Bs 100</td></tr>
+                        <tr><th scope="row">Completo</th><td>Hasta 4 ambientes</td><td>4 horas</td><td>Bs 180</td></tr>
+                        <tr><th scope="row">Profundo</th><td>Hasta 6 ambientes</td><td>6 horas</td><td>Bs 260</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="bloque-hogar" aria-labelledby="proceso">
+            <h2 id="proceso">Cómo se organiza una visita</h2>
+            <ol>
+                <li><strong>Definir las tareas:</strong> indicar los ambientes y las necesidades de limpieza.</li>
+                <li><strong>Acordar el plan:</strong> revisar el alcance, el tiempo y los materiales.</li>
+                <li><strong>Realizar la limpieza:</strong> seguir las tareas acordadas y cuidar las superficies.</li>
+                <li><strong>Revisar el resultado:</strong> comprobar los espacios al finalizar.</li>
+            </ol>
+        </section>
+        <section class="bloque-hogar" id="cotizacion" aria-labelledby="titulo-cotizacion">
+            <h2 id="titulo-cotizacion">Calcula una cotización de ejemplo</h2>
+            <p>Elige un plan y el número de visitas. Este simulador no realiza reservas ni envía datos.</p>
+            <form id="formulario-hogar">
+                <div class="columnas-hogar">
+                    <div><label for="plan-hogar">Plan</label><select id="plan-hogar" name="plan"><option value="100">Básico — Bs 100</option><option value="180">Completo — Bs 180</option><option value="260">Profundo — Bs 260</option></select></div>
+                    <div><label for="visitas-hogar">Número de visitas</label><input id="visitas-hogar" name="visitas" type="number" min="1" max="12" step="1" value="1" required></div>
+                </div>
+                <button class="boton-hogar" type="submit">Calcular total</button>
+                <p id="resultado-hogar" role="status" aria-live="polite">Selecciona tus opciones y pulsa Calcular total.</p>
+            </form>
+        </section>
+    </main>
+    <footer><p>Servicios Express - Trabajo colaborativo 2026</p><p>Servicio 2 elaborado por Bruno Josue Almendras · Ejemplo académico</p></footer>
+</body>
+</html>
