@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lavado de Autos</title>
+    <title>Lavado de Autos - Servicios Express</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Lavado de Autos</h1>
-        <p>Tu vehículo limpio y reluciente</p>
+        <h1>Servicios Express</h1>
+        <p>Tu vehículo limpio, brillante y como nuevo</p>
     </header>
 
     <nav>
@@ -22,63 +23,165 @@
     <main>
 
         <section class="bienvenida">
-            <h2>Nuestro servicio</h2>
+            <h2>Servicio profesional de lavado de autos</h2>
             <p>
-                Ofrecemos lavado de vehículos con atención
-                al detalle y productos de calidad.
+                En Servicios Express nos encargamos de mantener
+                tu vehículo limpio y en excelentes condiciones.
+                Ofrecemos diferentes paquetes de lavado según
+                tus necesidades y presupuesto.
             </p>
         </section>
 
         <section class="servicios">
-            <h2>Tipos de lavado</h2>
+
+            <h2>Nuestros paquetes de lavado</h2>
 
             <div class="contenedor">
 
                 <div class="tarjeta">
-                    <h3>Lavado básico</h3>
-                    <p>Limpieza exterior del vehículo.</p>
-                    <p>Precio: 30 Bs</p>
-                </div>
+                    <img
+                        src="imagenes/lavado-basico.jpg"
+                        alt="Lavado exterior de un automóvil"
+                        class="imagen-servicio">
 
-                <div class="tarjeta">
-                    <h3>Lavado completo</h3>
-                    <p>Limpieza exterior e interior.</p>
-                    <p>Precio: 60 Bs</p>
-                </div>
+                    <h3>Lavado Básico</h3>
 
-                <div class="tarjeta">
-                    <h3>Lavado premium</h3>
                     <p>
-                        Limpieza completa, encerado
-                        y aspirado.
+                        Lavado exterior con agua y champú
+                        especial para vehículos.
                     </p>
-                    <p>Precio: 100 Bs</p>
+
+                    <p><strong>Precio: 30 Bs</strong></p>
+                </div>
+
+                <div class="tarjeta">
+                    <img
+                        src="imagenes/lavado-completo.jpg"
+                        alt="Limpieza completa de automóvil"
+                        class="imagen-servicio">
+
+                    <h3>Lavado Completo</h3>
+
+                    <p>
+                        Limpieza exterior e interior,
+                        aspirado de asientos y alfombras.
+                    </p>
+
+                    <p><strong>Precio: 60 Bs</strong></p>
+                </div>
+
+                <div class="tarjeta">
+                    <img
+                        src="imagenes/lavado-premium.jpg"
+                        alt="Automóvil limpio y encerado"
+                        class="imagen-servicio">
+
+                    <h3>Lavado Premium</h3>
+
+                    <p>
+                        Lavado completo, encerado,
+                        limpieza de ventanas y aspirado.
+                    </p>
+
+                    <p><strong>Precio: 100 Bs</strong></p>
                 </div>
 
             </div>
         </section>
 
-        <section class="bienvenida">
+        <section class="seccion-tabla">
+
+            <h2>Comparación de servicios</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Características</th>
+                        <th>Básico</th>
+                        <th>Completo</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lavado exterior</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                    </tr>
+
+                    <tr>
+                        <td>Limpieza interior</td>
+                        <td>No</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aspirado</td>
+                        <td>No</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                    </tr>
+
+                    <tr>
+                        <td>Encerado</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Sí</td>
+                    </tr>
+
+                    <tr>
+                        <td>Precio</td>
+                        <td>30 Bs</td>
+                        <td>60 Bs</td>
+                        <td>100 Bs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section class="seccion-tabla">
+
             <h2>Horarios de atención</h2>
 
-            <table border="1" cellpadding="10"
-                   style="margin: 20px auto;">
+            <table>
                 <tr>
-                    <th>Día</th>
+                    <th>Días</th>
                     <th>Horario</th>
                 </tr>
+
                 <tr>
                     <td>Lunes a viernes</td>
-                    <td>8:00 - 18:00</td>
+                    <td>08:00 - 18:00</td>
                 </tr>
+
                 <tr>
-                    <td>Sábado</td>
-                    <td>8:00 - 14:00</td>
+                    <td>Sábados</td>
+                    <td>08:00 - 14:00</td>
+                </tr>
+
+                <tr>
+                    <td>Domingos</td>
+                    <td>Cerrado</td>
                 </tr>
             </table>
 
+        </section>
+
+        <section class="contacto">
+
+            <h2>Solicita nuestro servicio</h2>
+
+            <p>
+                ¿Quieres que tu vehículo quede impecable?
+                Contáctanos para conocer nuestros servicios.
+            </p>
+
             <button onclick="mostrarMensaje()">
-                Solicitar servicio
+                Solicitar información
             </button>
 
         </section>
@@ -86,7 +189,7 @@
     </main>
 
     <footer>
-        <p>Servicios Express - 2026</p>
+        <p>Servicios Express - Trabajo colaborativo 2026</p>
     </footer>
 
     <script src="script.js"></script>
