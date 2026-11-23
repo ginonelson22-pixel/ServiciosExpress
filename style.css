@@ -99,3 +99,30 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+button {
+    background-color: #164e78;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #287bb5;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #164e78;
+    color: white;
+}
+
+td, th {
+    padding: 12px;
+    text-align: center;
+}
