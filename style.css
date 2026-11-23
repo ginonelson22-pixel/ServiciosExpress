@@ -99,3 +99,138 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+button {
+    background-color: #164e78;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #287bb5;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #164e78;
+    color: white;
+}
+
+td, th {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Imagenes del servicio */
+
+.imagen-servicio {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Tarjetas de servicios */
+
+.tarjeta {
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+/* Tablas */
+
+.seccion-tabla {
+    text-align: center;
+    margin: 45px auto;
+}
+
+.seccion-tabla h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 850px;
+    background-color: white;
+}
+
+th {
+    background-color: #164e78;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Contacto */
+
+.contacto {
+    text-align: center;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.contacto h2 {
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+}
+
+.contacto button {
+    padding: 12px 25px;
+    background-color: #164e78;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #287bb5;
+}
+
+/* Adaptacion a celulares */
+
+@media (max-width: 600px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .seccion-tabla {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 500px;
+    }
+}
